@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Answer My Question</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h2>Will you stay forever with me?</h2>
+
+      <div class="q-buttons">
+        <button id="yesBtn" class="yes">Yes</button>
+        <button id="noBtn" class="no">No</button>
+      </div>
+
+      <div id="resultArea" style="margin-top:20px;"></div>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script>
+    const yesImg = "https://i.imgur.com/nXvrTyh.jpeg";  // happy dudu
+    const noImg  = "https://i.imgur.com/tpIx24B.png";   // sad dudu
+    document.addEventListener('DOMContentLoaded', () => setupQuestionPage(yesImg, noImg));
+  </script>
+</body>
+</html>
